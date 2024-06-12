@@ -1,0 +1,40 @@
+{
+  "comment": [
+    { "text": "The design of this site is very beautiful. I found everything I needed on this site. Thanks to those who participated.", "name": "Awkwafina", "place": "USA", "id": 1 },
+    { "text": "The design of this site is very beautiful. I found everything I needed on this site. Thanks to those who participated.", "name": "Jack Black", "place": "USA", "id": 2 },
+    { "text": "The design of this site is very beautiful. I found everything I needed on this site. Thanks to those who participated.", "name": "Ke Huy Quan", "place": "USA", "id": 3 },
+    { "text": "The design of this site is very beautiful. I found everything I needed on this site. Thanks to those who participated.", "name": "James Hong", "place": "USA", "id": 4 }
+  ],
+  "site": [
+    {
+      "title": "Planets",
+      "link": "https://saidjon-planets.netlify.app/",
+      "id": 1
+    },
+    {
+      "title": "Excursy",
+      "link": "https://saidjon2010.netlify.app",
+      "id": 2
+    },
+    {
+      "title": "Games",
+      "link": "https://saidjon.netlify.app",
+      "id": 3
+    },
+    {
+      "title": "About America",
+      "link": "https://amerika.netlify.app",
+      "id": 4
+    },
+    {
+      "title": "Unlock",
+      "link": "https://unlock-2010.netlify.app",
+      "id": 5
+    },
+    {
+      "title": "Yakkasaroy",
+      "link": "https://yakkasaroy.netlify.app",
+      "id": 6
+    }
+  ]
+}
