@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Typed from "typed.js";
-import img2 from "../../imgs/Man.png";
+// import Typed from "typed.js";
+// import imgHome from "../../imgs/neg.png";
 import img3 from "../../imgs/radius.png";
 import i from "../../imgs/iii.png";
 import site1 from "../../imgs/site1.png";
@@ -19,69 +19,52 @@ import "aos/dist/aos.css";
 function Home() {
   const { comment } = Fetch("https://5b4fe1198f106fc2.mokky.dev/comment");
 
-  const el = React.useRef(null);
-  React.useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: [" Programmer", " Designer", "Developer"],
-      typeSpeed: 120,
-      backDelay: 700,
-      loop: true,
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
   return (
     <div className="wrap">
-      <div className="Homme ">
-        <div className="home container">
-          <div className="home-row">
-            <div className="home-left">
-              <h2 className="home-title t1" data-aos="fade-down">
-                H<h2 className="gsp">i</h2> I'm Saidjon
-              </h2>
-              <h4 className="home-subtitle t2" data-aos="fade-down">
-                <span className="text">I'm a </span>
-                <span ref={el} />
-              </h4>
-              <p className="home-text t3" data-aos="fade-down">
-                Hello, my name is Saidjon, I am interested in programming. I
-                have been in the programming industry since 2021.
-              </p>
-              <div className="home-btn-row">
-                <Link to={"/alll"}>
-                  <div className="btnbox t4" data-aos="fade-down">
-                    <button className="home-btn1">My sites</button>
-                  </div>
-                </Link>
-                <Link to={"/about"}>
-                  <div className="btnbox t6" data-aos="fade-right">
-                    <button className="home-btn2">About Me</button>
-                  </div>
-                </Link>
+      <div className="home">
+        <div className="home-bg">
+          <div className="container home-rows">
+            <h2 className="home-title">
+              <span className="ml tl">
+                <span className="home-span1">Welcome</span>
+                <span className="home-span2">to</span>
+              </span>
+              <span className="ml mll">
+                <span className="home-span3">Saidjon's</span>
+                <span className="home-span4">site</span>
+              </span>
+            </h2>
+            <div className="icon-box">
+              <div className="icons-box">
+                <i class="bx bxl-telegram icon-home"></i>
+                <i class="bx bxl-instagram icon-home"></i>
+                <i class="bx bxl-github icon-home"></i>
               </div>
             </div>
-            <div className="home-right">
-              <img src={img2} className="t7" data-aos="fade-right" alt="" />
-            </div>
           </div>
+        </div>
+      </div>
+      <div className="Homme homee-bg">
+        <div className="container">
           <div className="home-row2">
             <div className="home-card t1" data-aos="fade-down">
               <h2 className="home-card-title">100%</h2>
+              <div className="arroww"></div>
               <p className="home-card-text">HTML</p>
             </div>
             <div className="home-card t2" data-aos="fade-down">
               <h2 className="home-card-title">100%</h2>
+              <div className="arroww"></div>
               <p className="home-card-text">CSS</p>
             </div>
             <div className="home-card t3" data-aos="fade-down">
               <h2 className="home-card-title">87%</h2>
+              <div className="arroww"></div>
               <p className="home-card-text">JavaScript</p>
             </div>
             <div className="home-card t4 bn" data-aos="fade-down">
               <h2 className="home-card-title">76%</h2>
+              <div className="arroww"></div>
               <p className="home-card-text">React JS</p>
             </div>
           </div>
