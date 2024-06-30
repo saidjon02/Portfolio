@@ -1,49 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Component/Home";
+import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 import AddElement from "./Component/AddElement";
 import AddList from "./Component/AddList";
 import Sites from "./Component/Sites";
 import Talk from "./Component/Talk";
 import Saidjon from "./Component/Saidjon";
-import "boxicons";
+import 'boxicons'
 import Scardlist from "./Component/scardlist";
 import About from "./Component/About";
 import AOS from "aos";
 import Contact from "./Component/Contact";
-import logo from "../imgs/Saidjon.png";
 AOS.init({
   offset: 100,
   duration: 500,
   easing: "ease-in-sine",
-});
+})
 function App() {
-  const [pop, setPop] = useState(false);
   return (
     <div>
       <BrowserRouter>
-        <div className={pop ? "header activeMe" : "header"}>
-          <div className="header-row container">
-            <div className="header-left">
-              <Link to={"/"}>
-                <img src={logo} className="logo" alt="" />
-              </Link>
-            </div>
-            <div className="header-right">
-              <Link to={"/"} className="header-link">
-                Home
-              </Link>
-              <Link to={"/about"} className="header-link">
-                About Me
-              </Link>
-              <Link to={"/contact"} className="header-link">
-                Contact Me
-              </Link>
-            </div>
-          </div>
-        </div>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -57,7 +37,6 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-      <i className={pop ? "bx bx-x apps" : "bx bx-menu apps"} onClick={() => setPop(!pop)}></i>
     </div>
   );
 }
