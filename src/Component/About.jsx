@@ -16,7 +16,7 @@ function About() {
           content="Hello, my name is Saidjan. I am from Uzbekistan I am programming
               since 2021 because of my interest in programming."
         />
-        <link rel="canonical" href="https://saidjon02.netlify.app/about" />
+        <link rel="canonical" href="/about" />
       </Helmet>
       <div className="aboutt t1" data-aos="flip-up">
         <h2 className="about-title">About Me</h2>

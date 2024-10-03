@@ -43,7 +43,7 @@ function Home() {
           content="Hello, my name is Saidjan. I am from Uzbekistan I am programming
               since 2021 because of my interest in programming."
         />
-        <link rel="canonical" href="https://saidjon02.netlify.app/" />
+        <link rel="canonical" href="/" />
       </Helmet>
       <div className="Homme ">
         <div className="home container">
