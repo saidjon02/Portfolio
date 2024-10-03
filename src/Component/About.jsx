@@ -5,9 +5,20 @@ import not2 from "../../imgs/JavaScript.png";
 import not3 from "../../imgs/Bootstrap.png";
 import not4 from "../../imgs/React.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 function About() {
   return (
     <div className="about-wrap">
+      <Helmet>
+        <title>About Saidjon</title>
+        <meta
+          name="description"
+          content="Hello, my name is Saidjan. I am from Uzbekistan I am programming
+              since 2021 because of my interest in programming."
+              
+        />
+        <link rel="canonical" href="/about" />
+      </Helmet>
       <div className="aboutt t1" data-aos="flip-up">
         <h2 className="about-title">About Me</h2>
       </div>

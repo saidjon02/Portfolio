@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import Contact from "./Contact";
 
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   const { comment } = Fetch("https://5b4fe1198f106fc2.mokky.dev/comment");
@@ -35,6 +36,15 @@ function Home() {
 
   return (
     <div className="wrap">
+      <Helmet>
+        <title>Fozilov Saidjon</title>
+        <meta
+          name="description"
+          content="Hello, my name is Saidjan. I am from Uzbekistan I am programming
+              since 2021 because of my interest in programming."
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <div className="Homme ">
         <div className="home container">
           <div className="home-row">
@@ -47,8 +57,8 @@ function Home() {
                 <span ref={el} />
               </h4>
               <p className="home-text t3" data-aos="fade-down">
-                Hello, my name is Saidjon, I am interested in programming. I
-                have been in the programming industry since 2021.
+                Hello, my full name is Fozilov Saidjon, I am interested in
+                programming. I have been in the programming industry since 2021.
               </p>
               <div className="home-btn-row">
                 <Link to={"/alll"}>
